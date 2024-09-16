@@ -1,0 +1,128 @@
+.contactus-container {
+    padding: 40px;
+    background-color: #f9f9f9;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .contactus-container h1 {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 40px;
+    color: #333;
+  }
+  
+  .contactus-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  .contactus-details {
+    text-align: center;
+    max-width: 800px;
+  }
+  
+  .contactus-details h2 {
+    font-size: 28px;
+    color: #5dbbbb;
+  }
+  
+  .contactus-details p {
+    font-size: 16px;
+    color: #666;
+  }
+  
+  .contactus-details ul {
+    list-style-type: none;
+    padding: 0;
+    font-size: 16px;
+    color: #666;
+  }
+  
+  .contactus-details li {
+    margin-bottom: 10px;
+  }
+  
+  .contactus-photo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  .contactus-photo img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 2px solid #5dbbbb;
+  }
+  
+  .contactus-description {
+    text-align: center;
+  }
+  
+  .contactus-description h3 {
+    font-size: 24px;
+    color: #5dbbbb;
+  }
+  
+  .contactus-description p {
+    font-size: 16px;
+    color: #666;
+  }
+  
+  .contactus-form {
+    margin-top: 40px;
+    text-align: center;
+  }
+  
+  .contactus-form h2 {
+    font-size: 28px;
+    color: #5dbbbb;
+    margin-bottom: 20px;
+  }
+  
+  .contactus-form .form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    
+  }
+  
+  .contactus-form label {
+    font-size: 16px;
+    color: #333;
+  }
+  
+  .contactus-form input,
+  .contactus-form textarea {
+    width: 100%;
+    max-width: 300px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .contactus-form button {
+    background-color: #5dbbbb;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .contactus-form button:hover {
+    background-color: #4aa0a8;
+  }
+  
+  @media  (max-width:740px) {
+    .contactus-container {
+     
+      margin-top: 30px;
+    }
+  }

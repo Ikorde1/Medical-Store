@@ -1,0 +1,86 @@
+.aboutus-container {
+    padding: 40px;
+    background-color: #f9f9f9;
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+    margin-top: 88px;
+  }
+  
+  .aboutus-container h1 {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 40px;
+    color: #333;
+  }
+  
+  .aboutus-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    
+  }
+  
+  .aboutus-text {
+    max-width: 800px;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .aboutus-text h2 {
+    font-size: 28px;
+    color: #5dbbbb;
+  }
+  
+  .aboutus-text p {
+    font-size: 16px;
+    color: #666;
+  }
+  
+  .aboutus-image img {
+    width: 100%;
+   object-fit:cover;
+   height: 100%;
+    max-width: 600px;
+    
+  }
+  .aboutus-image-hide{
+    display: none;
+  }
+  .aboutus-values {
+    margin-top: 40px;
+  }
+  
+  .aboutus-values h2 {
+    font-size: 28px;
+    color: #5dbbbb;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .aboutus-values ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+  }
+  
+  .aboutus-values li {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 10px;
+  }
+  
+
+  @media  (max-width:740px) {
+    .aboutus-image {
+        display: none;
+    }
+
+    .aboutus-image-hide{
+      display: flex;
+      justify-content: center;
+      margin-top: 20px;
+     
+    }
+  }
