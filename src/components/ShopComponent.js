@@ -1,5 +1,6 @@
 import React from 'react';
-import './ShopComponent.css'; // External CSS file for styling
+import './ShopComponent.css'; // 
+import Slides from './Slides';
 
 import img1 from '../medico_assets/Home_images/img1.jpg';
 import img3 from '../medico_assets/Home_images/img3.png';
@@ -12,7 +13,10 @@ const ShopComponent = () => {
   const dummyImages = [img8, img6, img3, img9, img7, img1];
 
   return (
-    <div className="shop-container">
+
+  <>
+  <Slides/>
+      <div className="shop-container">
       {/* Welcome Section */}
       <section className="welcome-section">
         <div className="welcome-text">
@@ -78,6 +82,7 @@ const ShopComponent = () => {
       
       
     </div>
+  </>
   );
 };
 

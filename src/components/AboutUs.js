@@ -25,9 +25,10 @@ const AboutUs = () => {
             <h2>Why Choose Us?</h2>
                 <ul>
                     <li><strong>Quality Products:</strong> We source our products from trusted manufacturers to ensure the highest standards.</li>
-                    <li><strong>Competitive Prices:</strong> Affordable rates without compromising on quality.</li>
                     <li><strong>Personalized Service:</strong> Friendly and helpful staff ready to assist you with your needs.</li>
                     <li><strong>Convenient Location:</strong> Easily accessible with ample parking for your convenience.</li>
+                    <li><strong>Competitive Prices:</strong> Affordable rates without compromising on quality.</li>
+
                 </ul>
       </div>
         </div>

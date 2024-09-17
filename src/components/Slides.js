@@ -10,19 +10,34 @@ import img5 from '../medico_assets/banners/banner5.jpg';
 
 const Slides = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
+  const [direction, setDirection] = useState('forward'); // Track direction of movement
 
   // Define the slides array with your images
   const slides = [img1, img2, img3, img4, img5];
 
   useEffect(() => {
     const slideInterval = setInterval(() => {
-      setCurrentSlide((prevSlide) => 
-        prevSlide === slides.length - 1 ? 0 : prevSlide + 1
-      );
+      setCurrentSlide((prevSlide) => {
+        if (direction === 'forward') {
+          if (prevSlide === slides.length - 1) {
+            // Switch direction to backward when last slide is reached
+            setDirection('backward');
+            return prevSlide - 1;
+          }
+          return prevSlide + 1;
+        } else { // Backward direction
+          if (prevSlide === 0) {
+            // Switch direction to forward when first slide is reached
+            setDirection('forward');
+            return prevSlide + 1;
+          }
+          return prevSlide - 1;
+        }
+      });
     }, 4000); // Adjust the interval as needed
 
     return () => clearInterval(slideInterval); // Cleanup the interval on component unmount
-  }, [slides.length]);
+  }, [direction, slides.length]);
 
   return (
     <div className="slideshow-container">
